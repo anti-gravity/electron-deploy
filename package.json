@@ -1,0 +1,10 @@
+{
+  "version": "0.1.0",
+  "name": "electron-deploy",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "case <case@casesandberg.com>",
+  "license": "MIT"
+}
