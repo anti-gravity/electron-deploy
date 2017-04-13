@@ -6,5 +6,14 @@
     "start": "node index.js"
   },
   "author": "case <case@casesandberg.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": "@case/eslint-config"
+  },
+  "dependencies": {
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "@case/eslint-config": "^0.2.0"
+  }
 }
