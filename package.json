@@ -1,9 +1,10 @@
 {
   "version": "0.1.0",
   "name": "electron-deploy",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "babel src -d lib"
   },
   "author": "case <case@casesandberg.com>",
   "license": "MIT",
@@ -14,6 +15,12 @@
     "request": "^2.81.0"
   },
   "devDependencies": {
-    "@case/eslint-config": "^0.2.0"
+    "@case/eslint-config": "^0.2.0",
+    "babel-cli": "^6.24.0",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.2.2",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.23.0"
   }
 }

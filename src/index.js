@@ -1,6 +1,6 @@
 import request from 'request'
 
-export const isPackageUpToDate = ({ name, version }) => new Promise((resolve, reject) {
+export const isPackageUpToDate = ({ name, version }) => new Promise((resolve, reject) => {
   request(`http://registry.npmjs.org/${ name }`, (err, res) => {
     err && reject(err)
 
